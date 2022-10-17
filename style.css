@@ -9,6 +9,7 @@
   body {
     background: linear-gradient(30deg, #2e003b, #0013c0, #0073c0) fixed;
     margin: 0;
+    overflow: hidden;
     }
   /*Responsividade*/
 
@@ -149,6 +150,9 @@
   @media screen and (max-width: 1024px) {
     .nav-links {
       width: 60%;
+      overflow: hidden;
+    }
+    body{
       overflow: hidden;
     }
   }
