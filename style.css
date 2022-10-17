@@ -9,7 +9,7 @@
   body {
     background: linear-gradient(30deg, #2e003b, #0013c0, #0073c0) fixed;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     }
   /*Responsividade*/
 
@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 25% 0 25%;
+    padding: 0 25% 100px 25%;
   }
 
   .container{
@@ -63,6 +63,7 @@
   /*logo*/
   
   .logo a img{
+    padding-top: 0.3em;
     width: 200px;
   }
   
@@ -101,6 +102,11 @@
     bottom: 0;
     width: 100%;
     position: fixed;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    
   }
   
   
@@ -150,14 +156,19 @@
   @media screen and (max-width: 1024px) {
     .nav-links {
       width: 60%;
-      overflow: hidden;
     }
-    body{
-      overflow: hidden;
+
+    .linguagens{
+      padding-bottom: 100px;
     }
   }
   
   @media screen and (max-width: 768px) {  
+
+    body{
+      padding-bottom: 120px;
+      overflow-y: scroll;
+    }
     
     .nav-links {
       align-items: center;
