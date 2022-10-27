@@ -1,0 +1,78 @@
+.container{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 12vh 1fr 1fr 20vh;
+  grid-template-areas: 
+  'nav nav'
+  'header header'
+  'main main'
+  'footer footer';
+}
+
+header{
+  color: #ffffff;
+  grid-area: header;
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0 4em;
+}
+
+.minhafoto img{
+  height: 40vh;
+  margin: 5vh 0 5vh 0;
+}
+
+h3{
+  color: #e7d10f;
+  margin-bottom: 7px;
+}
+
+aside{
+  margin-bottom: 10px;
+}
+
+li{
+  margin-top: 8px;
+}
+
+ul{
+  text-align: left;
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+details div{
+  text-align: left;
+  margin-top: 25px;
+}
+
+section details summary{
+  color: #000000;
+  background-color: #e7d10f;
+  border-radius: 12px;
+  height: 30px;
+  margin: 10px;
+  text-align: center;
+  font-weight: 800;
+  padding: 0.5%;
+}
+
+summary{
+  margin-top: 5px;
+}
+
+section{
+  margin: 0 10%;
+
+}
+
+@media screen and (max-width: 618px) {
+
+  section{
+    margin: 0 1%;
+  
+  }
+
+}
