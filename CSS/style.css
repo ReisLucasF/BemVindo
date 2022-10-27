@@ -30,7 +30,7 @@ body{
 .container{
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 10vh 40vh 40vh 10vh;
+  grid-template-rows: 10vh 1fr 1fr 10vh;
   grid-template-areas: 
   'nav nav'
   'header header'
