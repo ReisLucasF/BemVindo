@@ -44,6 +44,7 @@ nav{
   display: flex;
   justify-content: space-around;
   grid-area: nav;
+  overflow-x: hidden;
 }
 
 header{
@@ -73,11 +74,11 @@ footer{
 /*Design das áreas*/
 
  nav, footer{
-  background: linear-gradient(360deg, #000000,#21022c );
+  background: linear-gradient(360deg, #000000,#15011d );
  }
 
  footer{
-  background: linear-gradient(180deg, #000000,#0e0113 );
+  background: linear-gradient(180deg, #000000,#0b000f );
  }
 
 /*Nav*/
@@ -102,11 +103,12 @@ footer{
 }
 
 .nav-links a:hover {
-  font-weight: 600;
+  font-weight: 800;
+  font-size: large;
 }
 
 .logo a img{
-  height: 6.5vh;
+  height: 5vh;
 }
 
 /*Menu Hamburguer*/
@@ -135,11 +137,10 @@ footer{
 }
 
 .mainR{
+  margin: 25px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  margin: 25px 35% 0 35%;
+  justify-content: center;
+  gap: 45px;
 }
 
 
@@ -177,12 +178,22 @@ footer{
     width: 60%;
   }
 
-  .linguagens{
-    padding-bottom: 100px;
-  }
 }
 
-@media screen and (max-width: 768px) {  
+@media screen and (max-width: 1153px) {  
+
+  header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .imagemH img{
+    height: 25vh;
+
+  }
 
   body{
     overflow-x: hidden;
@@ -209,17 +220,16 @@ footer{
   .hamburger {
     display: block;
   }
+
+  .logo a img{
+    height: 4.5vh;
+  }
+
 }
 
 .nav-active {
   transform: translateX(0%);
 }
-
-@media screen and (max-width: 590px) {
-
-  .linguagens{
-    padding: 0 15% 0 15%;
-  }
 
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
@@ -232,4 +242,32 @@ footer{
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
+@media screen and (max-width: 1153px){
+  .imagemH img, header{
+    margin-top: 4vh;
+  }
+
+  main{
+    margin-top: 15vh;
+    margin: 12vh 12vw 0 12vw;
+  }
+
+  .icon{
+    height: 6vh;
+
+  }
+}
+
+@media screen and (max-width: 618px) {
+
+  body{
+    overflow-y: scroll;
+  }
+
+ header{
+  margin-left: 12vw;
+  margin-right: 12vw;
+ }
+
 }
