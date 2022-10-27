@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 body{
@@ -31,7 +30,7 @@ body{
 .container{
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 10vh 1fr 1fr 12vh;
+  grid-template-rows: 10vh 1fr 1fr 10vh;
   grid-template-areas: 
   'nav nav'
   'header header'
@@ -45,6 +44,7 @@ nav{
   display: flex;
   justify-content: space-around;
   grid-area: nav;
+  overflow-x: hidden;
 }
 
 header{
@@ -54,7 +54,7 @@ header{
   justify-content: space-around;
   align-items: center;
   text-align: center;
-
+  margin-top: 10%;
 }
 main{
   color: #ffffff;
@@ -180,6 +180,10 @@ span, a, #titulo{
     height: 25vh;
 
   }
+
+  body{
+    overflow-x: hidden;
+  }
   
   .nav-links {
     align-items: center;
@@ -242,6 +246,10 @@ span, a, #titulo{
 }
 
 @media screen and (max-width: 618px) {
+
+  body{
+    overflow-y: scroll;
+  }
 
  header{
   margin-left: 12vw;
