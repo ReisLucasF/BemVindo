@@ -33,6 +33,7 @@ main{
   grid-area: main;
   text-align: center;
   margin-top: 10vh;
+  
 }
 
 footer{
@@ -88,6 +89,11 @@ section details summary{
 
 summary{
   margin-top: 5px;
+  cursor: pointer;
+}
+
+summary:hover{
+  transform: scale(1.03);
 }
 
 section{

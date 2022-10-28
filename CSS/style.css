@@ -30,7 +30,7 @@ body{
 .container{
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 10vh 1fr 1fr 10vh;
+  grid-template-rows: 10vh 40vh 42vh 13vh;
   grid-template-areas: 
   'nav nav'
   'header header'
@@ -44,7 +44,7 @@ nav{
   display: flex;
   justify-content: space-around;
   grid-area: nav;
-  overflow-x: hidden;
+
 }
 
 header{
@@ -61,6 +61,7 @@ main{
   grid-area: main;
   text-align: center;
   margin-top: 15vh;
+  margin-bottom: 15vh;
 }
 
 footer{
@@ -181,20 +182,18 @@ span, a, #titulo{
 
   }
 
-  body{
-    overflow-x: hidden;
-  }
-  
+
   .nav-links {
+    overflow-x: hidden;
     align-items: center;
     background: #e7d10f;
-    border-radius: 0 0 0 30px;
+    border-radius: 0px 0 0 75px;
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 30vh;
     position: absolute;
     right: 0px;
-    top: 8vh;
+    top: 10vh;
     transform: translateX(100%);
     width: 30%;
   }
@@ -205,6 +204,11 @@ span, a, #titulo{
 
   .hamburger {
     display: block;
+  }
+
+  body{
+    overflow-x: hidden;
+    touch-action: pan-y;
   }
 
   .logo a img{
@@ -247,13 +251,14 @@ span, a, #titulo{
 
 @media screen and (max-width: 618px) {
 
-  body{
-    overflow-y: scroll;
-  }
 
  header{
   margin-left: 12vw;
   margin-right: 12vw;
  }
+
+ footer{
+  margin-top: 6vh;
+}
 
 }
