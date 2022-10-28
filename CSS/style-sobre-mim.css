@@ -1,12 +1,12 @@
 .container{
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 10vh 1fr 0.5fr 10vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 1.5fr 0.5fr 10vh;
   grid-template-areas: 
-  'nav nav'
-  'header header'
-  'main main'
-  'footer footer';
+  'nav'
+  'header'
+  'main'
+  'footer';
 }
 
 header{
@@ -33,7 +33,7 @@ main{
   grid-area: main;
   text-align: center;
   margin-top: 10vh;
-  
+  margin-bottom: 0;
 }
 
 footer{
@@ -43,6 +43,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0;
 }
 
 .minhafoto img{
@@ -100,6 +101,8 @@ section{
   margin: 0 10%;
 
 }
+
+
 
 @media screen and (max-width: 618px) {
 

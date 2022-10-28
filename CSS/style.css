@@ -30,7 +30,7 @@ body{
 .container{
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 10vh 40vh 42vh 13vh;
+  grid-template-rows: 10vh 40vh 40vh 10vh;
   grid-template-areas: 
   'nav nav'
   'header header'
@@ -247,6 +247,10 @@ span, a, #titulo{
     height: 6vh;
 
   }
+
+  footer{
+    margin-top: 2vh;
+  }
 }
 
 @media screen and (max-width: 618px) {
@@ -258,7 +262,7 @@ span, a, #titulo{
  }
 
  footer{
-  margin-top: 6vh;
+  margin-top: 3.5vh;
 }
 
 }
