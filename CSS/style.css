@@ -238,6 +238,13 @@ span, a, #titulo{
     margin-top: 4vh;
   }
 
+  .mainR{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   main{
     margin-top: 15vh;
     margin: 12vh 12vw 0 12vw;
