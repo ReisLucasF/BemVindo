@@ -137,6 +137,11 @@ footer{
 
 .icon{
   height: 7vh;
+  transition: all 0.5s;
+}
+
+.icon:hover{
+  scale: 1.2;
 }
 
 .mainR{
