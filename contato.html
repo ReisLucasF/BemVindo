@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Reis</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/contato.css">
+    <!-- Scripts -->
+    <script src="function.js" defer></script>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="IMG/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="/"><img src="IMG/Logocomnome.svg" alt=""></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="sobre-mim.html">Sobre mim</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <!-- conteúdo do corpo -->
+        <header>
+                <div class="contato">
+                    <h2 id="titulo">Contato</h2>
+                    
+                    <!-- Formulário de contato -->
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="b05dde29-35a6-44d0-9cc5-ac5d72c76cdd">
+                        
+                        <!-- Entrada de Nome -->
+                        <label>Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                        
+                        <!-- Entrada de e-mail -->
+                        <label>E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                        
+                        <!-- Entrada de Mensagem -->
+                        <label>Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite a sua mensagem"></textarea>
+
+                        <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+                <!-- Atalhos para contato e redes sociais -->
+                <div class="conteudoDireita">
+
+                    <h1>Minhas redes sociais:</h1>
+
+                    <div class="contas">   
+                        <!-- icone github -->
+                        <a href="https://github.com/ReisLucasF" target="_blank" class="icon">
+                            <img src="IMG/github.svg" alt="icone github" title="Github">
+                        </a>
+
+                        <!-- icone linkedin -->
+                        <a href="https://www.linkedin.com/in/lucasreisf/" target="_blank" class="icon">
+                            <img src="IMG/linkedin.svg" alt="icone linkedin" title="LinkedIn">
+                        </a>
+                    </div> 
+
+                </div>
+        </header>
+
+        <!-- Rodapé -->
+        <footer>
+            <div class="Direitos">
+                <p>Copyright &copy; Desenvolvido por <span>Lucas Reis</span></p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

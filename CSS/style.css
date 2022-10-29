@@ -30,7 +30,7 @@ body{
 .container{
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 10vh 1fr 1fr 10vh;
+  grid-template-rows: 10vh 1fr 1fr 12vh;
   grid-template-areas: 
   'nav nav'
   'header header'
@@ -54,14 +54,13 @@ header{
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin-top: 10%;
 }
 main{
   color: #ffffff;
   grid-area: main;
   text-align: center;
   margin-top: 15vh;
-  margin-bottom: 15vh;
+  margin-bottom: 0vh;
 }
 
 footer{
@@ -102,6 +101,7 @@ footer{
   letter-spacing: 3px;
   text-decoration: none;
   transition: 100ms ease-in;
+  transition: all 0.5s;
 }
 
 .nav-links a:hover {
