@@ -17,6 +17,8 @@ header{
   align-items: center;
   text-align: center;
   margin: 0 4em;
+  animation: zoomIn;
+  animation-duration: 1s;
 }
 
 nav{
@@ -48,6 +50,9 @@ footer{
 .minhafoto img{
   height: 40vh;
   margin: 5vh 0 5vh 0;
+
+  animation: zoomIn;
+  animation-duration: 1s;
 }
 
 h3{

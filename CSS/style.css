@@ -54,6 +54,8 @@ header{
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  animation: zoomIn;
+  animation-duration: 1s;
 }
 main{
   color: #ffffff;
@@ -61,6 +63,8 @@ main{
   text-align: center;
   margin-top: 15vh;
   margin-bottom: 0vh;
+  animation: zoomIn;
+  animation-duration: 1s;
 }
 
 footer{
@@ -133,11 +137,15 @@ footer{
 
 .imagemH img{
   height: 30vh;
+  animation: backInRight;
+  animation-duration: 1.5s;
 }
 
 .icon{
   height: 7vh;
   transition: all 0.5s;
+  animation: backInUp;
+  animation-duration: 1.5s;
 }
 
 .icon:hover{
