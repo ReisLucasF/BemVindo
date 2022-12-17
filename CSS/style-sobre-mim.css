@@ -108,6 +108,31 @@ section{
 }
 
 
+.expCampo {
+  background-color: #e7d10f;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  justify-content: center;
+  outline: none;
+  padding: 5px 25px;
+  transform: scale(1.02);
+  transition: box-shadow 0.1s;
+  transition: all 1.02s;
+  margin-bottom: 5vh;
+}
+
+.expCampo:hover {
+  cursor: pointer;
+  scale: 1.02;
+  font-weight: 900;
+  filter: drop-shadow(0px 1px 5px #1212126b);
+}
+
+
 
 @media screen and (max-width: 618px) {
 

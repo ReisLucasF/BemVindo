@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSS/style-sobre-mim.css">
     <!-- Scripts -->
     <script src="function.js" defer></script>
+    <script src="camposrecolhiveis.js"></script>
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,56 +83,29 @@
         <main>
             <!-- experiência 1 -->
             <section>
-                <details>
-                    <summary>Assistente Administrativo Pleno</summary>
-                    <div>    
-                        <h3>Empresa:</h3><aside>Manut Solar LTDA</aside>
-                        <h3>Período:</h3><aside>Ago de 2019 até o presente momento</aside>
-                        <h3>funções:</h3>
-                    </div>
-                        <ul>
-                            <li>Administração de Servidor Windows realizando controle de acesso, criação de novos usuários e resolução de eventuais erros;</li>
-                            <li>Implementação de sistema ERP;</li>
-                            <li>Controle de acesso ao sistema;</li>
-                            <li>Suporte na utilização de software e verificação de demandas como product owner;</li>
-                            <li>Atualização do site institucional da empresa;</li>
-                            <li>Criação de design para site, redes sociais e marketing no geral.</li>
-                        </ul>
-                </details>
+                    <!-- corpo da pagina -->
+                    <main-map id="filtroExperiencia" name="filtroExperiencia">
 
-                <!-- experiência 2 -->
-                <details>
-                    <summary>Assistente de Loja</summary>
-                    <div>    
-                        <h3>Empresa:</h3><aside>Lojas Americanas S/A</aside>
-                        <h3>Período:</h3><aside>Ago de 2019 - Jan de 2021</aside>
-                        <h3>funções:</h3>
-                    </div>
-                        <ul>
-                            <li>Atendimento ao cliente online e presencial;</li>
-                            <li>Gestão de sistema de pedidos on-line;</li>
-                            <li>Gestão de estoque;</li>
-                            <li>Organização de loja e checkout;</li>
-                            <li>Fechamento de caixa.</li>
-                        </ul>
-                </details>
-
-                <!-- experiência 3 -->
-                <details>
-                    <summary>Auxiliar Administrativo Junior</summary>
-                    <div>    
-                        <h3>Empresa:</h3><aside>Delta Filmes LTDA</aside>
-                        <h3>Período:</h3><aside>Out de 2017 - Jan de 2019</aside>
-                        <h3>funções:</h3>
-                    </div>
-                        <ul>
-                            <li>Rotina administrativa;</li>
-                            <li>Organização de documentos;</li>
-                            <li>Elaboração de planilhas e documentos;</li>
-                            <li>Atendimento ao cliente;</li>
-                            <li>Gestão de estoque.</li>
-                        </ul>
-                </details>
+                        <div class="balaoExperiencia" onclick="srcExperiencias('1')">
+                            <h2 class="expCampo">Delta Filmes LTDA</h2>
+                            </button>
+                        </div>
+        
+                        <div class="balaoExperiencia" onclick="srcExperiencias('2')">
+                            <h2 class="expCampo">Americanas S.A</h2>
+                        </div>
+        
+                        <div class="balaoExperiencia" onclick="srcExperiencias('3')">
+                            <h2 class="expCampo">Manut Energias LTDA</h2>
+                        </div>
+        
+                    </main-map>
+                    <!-- Ânconra para dar 'scroll' até o conteúdo impresso -->
+                    <main>
+                        <p id="nomeExperiencia"></p>
+                        <div id="experiencia">
+                        </div>
+                    </main>
             </section>
         </main>
 
